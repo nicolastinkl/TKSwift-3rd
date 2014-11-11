@@ -13,6 +13,7 @@
 		936223D31A0DC8C000CAF943 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936223D21A0DC8C000CAF943 /* Images.xcassets */; };
 		936223D61A0DC8C000CAF943 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936223D41A0DC8C000CAF943 /* LaunchScreen.xib */; };
 		936223E21A0DC8C000CAF943 /* TKSwift_3rdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936223E11A0DC8C000CAF943 /* TKSwift_3rdTests.swift */; };
+		93F3DF521A11ED8A006C9298 /* TKControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F3DF511A11ED8A006C9298 /* TKControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9347096F1A11E3EA003CCC00 /* MyPlaygroundB.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundB.playground; sourceTree = "<group>"; };
 		936223C61A0DC8C000CAF943 /* TKSwift-3rd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TKSwift-3rd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936223CA1A0DC8C000CAF943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		936223CB1A0DC8C000CAF943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		936223DB1A0DC8C000CAF943 /* TKSwift-3rdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TKSwift-3rdTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936223E01A0DC8C000CAF943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		936223E11A0DC8C000CAF943 /* TKSwift_3rdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKSwift_3rdTests.swift; sourceTree = "<group>"; };
+		936223ED1A0DCF0700CAF943 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		93F3DF511A11ED8A006C9298 /* TKControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		936223C81A0DC8C000CAF943 /* TKSwift-3rd */ = {
 			isa = PBXGroup;
 			children = (
+				93F3DF501A11ED67006C9298 /* TKControl */,
+				936223EC1A0DCEFB00CAF943 /* PlaygroundFiles */,
 				936223CB1A0DC8C000CAF943 /* AppDelegate.swift */,
 				936223CD1A0DC8C000CAF943 /* ViewController.swift */,
 				936223CF1A0DC8C000CAF943 /* Main.storyboard */,
@@ -110,6 +116,23 @@
 				936223E01A0DC8C000CAF943 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		936223EC1A0DCEFB00CAF943 /* PlaygroundFiles */ = {
+			isa = PBXGroup;
+			children = (
+				936223ED1A0DCF0700CAF943 /* MyPlayground.playground */,
+				9347096F1A11E3EA003CCC00 /* MyPlaygroundB.playground */,
+			);
+			path = PlaygroundFiles;
+			sourceTree = "<group>";
+		};
+		93F3DF501A11ED67006C9298 /* TKControl */ = {
+			isa = PBXGroup;
+			children = (
+				93F3DF511A11ED8A006C9298 /* TKControl.swift */,
+			);
+			name = TKControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F3DF521A11ED8A006C9298 /* TKControl.swift in Sources */,
 				936223CE1A0DC8C000CAF943 /* ViewController.swift in Sources */,
 				936223CC1A0DC8C000CAF943 /* AppDelegate.swift in Sources */,
 			);
@@ -337,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TKSwift-3rd/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TKSwift-3rd/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +431,7 @@
 				936223E71A0DC8C000CAF943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		936223E81A0DC8C000CAF943 /* Build configuration list for PBXNativeTarget "TKSwift-3rdTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +440,7 @@
 				936223EA1A0DC8C000CAF943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
