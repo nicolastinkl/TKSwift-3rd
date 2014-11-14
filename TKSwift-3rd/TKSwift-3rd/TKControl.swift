@@ -27,7 +27,6 @@ struct TargetActionWrapper<T:AnyObject>:TargetAction {
             action(t)() // real return a function ()->()
         }
     }
-        
 }
 
 
@@ -61,17 +60,6 @@ class TKControl {
     
     func click()
     {
-        //这里是处理点击事件
-       
-        /*!
-         @obj 遍历找到touchupinside事件
-        */
-        println("OK")
-        println(actions)
-        
-        for (index, value) in enumerate(actions) {
-            println("Item \(index + 1): \(value)")
-        }
         
     }
     

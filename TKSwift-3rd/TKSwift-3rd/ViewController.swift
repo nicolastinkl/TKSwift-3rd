@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController,TargetAction {
+class ViewController: UIViewController {
 
     func onButtonTap() -> () {
         println("Button was tapped")
@@ -27,12 +27,7 @@ class ViewController: UIViewController,TargetAction {
         println("count : \(button.actions.count)")
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    func performAction() {
-        //you can du somethings with this function
-        println("function : \(__FUNCTION__)")
-        
-    }
+ 
     
     @IBAction func seeLog(sender: AnyObject) {
         

@@ -13,6 +13,7 @@
 		936223D31A0DC8C000CAF943 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936223D21A0DC8C000CAF943 /* Images.xcassets */; };
 		936223D61A0DC8C000CAF943 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936223D41A0DC8C000CAF943 /* LaunchScreen.xib */; };
 		936223E21A0DC8C000CAF943 /* TKSwift_3rdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936223E11A0DC8C000CAF943 /* TKSwift_3rdTests.swift */; };
+		936436131A15AD5B00EECC84 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936436121A15AD5B00EECC84 /* main.swift */; };
 		93F3DF521A11ED8A006C9298 /* TKControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F3DF511A11ED8A006C9298 /* TKControl.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,9 @@
 		936223E01A0DC8C000CAF943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		936223E11A0DC8C000CAF943 /* TKSwift_3rdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKSwift_3rdTests.swift; sourceTree = "<group>"; };
 		936223ED1A0DCF0700CAF943 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		936436111A15A90F00EECC84 /* MyPlaygroundD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundD.playground; sourceTree = "<group>"; };
+		936436121A15AD5B00EECC84 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		936969091A125BB900E0DD0A /* MyPlaygroundC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundC.playground; sourceTree = "<group>"; };
 		93F3DF511A11ED8A006C9298 /* TKControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,7 @@
 				936223D21A0DC8C000CAF943 /* Images.xcassets */,
 				936223D41A0DC8C000CAF943 /* LaunchScreen.xib */,
 				936223C91A0DC8C000CAF943 /* Supporting Files */,
+				936436121A15AD5B00EECC84 /* main.swift */,
 			);
 			path = "TKSwift-3rd";
 			sourceTree = "<group>";
@@ -123,6 +128,8 @@
 			children = (
 				936223ED1A0DCF0700CAF943 /* MyPlayground.playground */,
 				9347096F1A11E3EA003CCC00 /* MyPlaygroundB.playground */,
+				936969091A125BB900E0DD0A /* MyPlaygroundC.playground */,
+				936436111A15A90F00EECC84 /* MyPlaygroundD.playground */,
 			);
 			path = PlaygroundFiles;
 			sourceTree = "<group>";
@@ -237,6 +244,7 @@
 			files = (
 				93F3DF521A11ED8A006C9298 /* TKControl.swift in Sources */,
 				936223CE1A0DC8C000CAF943 /* ViewController.swift in Sources */,
+				936436131A15AD5B00EECC84 /* main.swift in Sources */,
 				936223CC1A0DC8C000CAF943 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
