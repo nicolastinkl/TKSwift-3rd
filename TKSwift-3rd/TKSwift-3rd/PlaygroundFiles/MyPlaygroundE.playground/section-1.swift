@@ -75,3 +75,15 @@ if "asdfhjasklf@gmail.com" =~~ mailPattern
 
 
 
+func _default(str1:String = "one ",str2:String="two")
+{
+    println(str1 )
+    println(str2 )
+}
+
+_default(str1: "", str2: "")
+
+
+
+
+
