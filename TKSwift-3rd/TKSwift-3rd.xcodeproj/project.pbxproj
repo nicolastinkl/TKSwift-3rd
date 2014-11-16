@@ -43,6 +43,7 @@
 		936436111A15A90F00EECC84 /* MyPlaygroundD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundD.playground; sourceTree = "<group>"; };
 		936436121A15AD5B00EECC84 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		936969091A125BB900E0DD0A /* MyPlaygroundC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundC.playground; sourceTree = "<group>"; };
+		93B502451A18C8C700267012 /* MyPlaygroundE.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundE.playground; sourceTree = "<group>"; };
 		93F3DF511A11ED8A006C9298 /* TKControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +131,7 @@
 				9347096F1A11E3EA003CCC00 /* MyPlaygroundB.playground */,
 				936969091A125BB900E0DD0A /* MyPlaygroundC.playground */,
 				936436111A15A90F00EECC84 /* MyPlaygroundD.playground */,
+				93B502451A18C8C700267012 /* MyPlaygroundE.playground */,
 			);
 			path = PlaygroundFiles;
 			sourceTree = "<group>";

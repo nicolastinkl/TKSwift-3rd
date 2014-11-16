@@ -3,17 +3,18 @@
 import Cocoa
 
 
-
-//extension NSString{
-//    convenience init(format:NSString,_ args:CVarArgType ){
-//        
-//    }
-//}
+protocol MyProtocol {    class func foo() -> String}struct MyStruct: MyProtocol {
+    static func foo() -> String {        return "MyStruct"
+    }}enum MyEnum: MyProtocol {    static func foo() -> String {    return "MyEnum" }}class MyClass: MyProtocol {    class func foo() -> String {    return "MyClass" }}
 
 
+class someClass {
+            class func  one() {
+                println("OK")
+            }
+}
 
-class ClassA {        var numA: Int        init(num: Int) {//            numA = num        }
-}class ClassB: ClassA {        let numB: Int        override init(num: Int) {        numB = num + 1        super.init(num: num)        }}
 
-let s = ClassA()
+someClass.one()
+
 
