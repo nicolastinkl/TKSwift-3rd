@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		9347096F1A11E3EA003CCC00 /* MyPlaygroundB.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundB.playground; sourceTree = "<group>"; };
+		934B500B1A1B25270010F0EA /* MyPlaygroundF.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundF.playground; sourceTree = "<group>"; };
 		936223C61A0DC8C000CAF943 /* TKSwift-3rd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TKSwift-3rd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		936223CA1A0DC8C000CAF943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		936223CB1A0DC8C000CAF943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 				936969091A125BB900E0DD0A /* MyPlaygroundC.playground */,
 				936436111A15A90F00EECC84 /* MyPlaygroundD.playground */,
 				93B502451A18C8C700267012 /* MyPlaygroundE.playground */,
+				934B500B1A1B25270010F0EA /* MyPlaygroundF.playground */,
 			);
 			path = PlaygroundFiles;
 			sourceTree = "<group>";
