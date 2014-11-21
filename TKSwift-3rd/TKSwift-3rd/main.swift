@@ -15,6 +15,8 @@ import UIKit
 *  <#Description#>
 *
 *  @since <#version number#>
+*
+*  @summary  sone
 */
 class MyApplication: UIApplication {
     override func sendEvent(event: UIEvent) {
