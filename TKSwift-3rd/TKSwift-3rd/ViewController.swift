@@ -9,6 +9,13 @@
 import UIKit
 
 
+/*!
+*  @author tinkl, 14-11-22 16:11:35
+*
+*  go
+*
+*  @since 1.0.0
+*/
 class ViewController: UIViewController {
 
     func onButtonTap() -> () {
@@ -26,8 +33,7 @@ class ViewController: UIViewController {
         
         println("count : \(button.actions.count)")
         // Do any additional setup after loading the view, typically from a nib.
-    }
- 
+    } 
     
     @IBAction func seeLog(sender: AnyObject) {
         

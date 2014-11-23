@@ -14,6 +14,7 @@
 		936223D61A0DC8C000CAF943 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936223D41A0DC8C000CAF943 /* LaunchScreen.xib */; };
 		936223E21A0DC8C000CAF943 /* TKSwift_3rdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936223E11A0DC8C000CAF943 /* TKSwift_3rdTests.swift */; };
 		936436131A15AD5B00EECC84 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936436121A15AD5B00EECC84 /* main.swift */; };
+		939C27E91A21CA4C00203F65 /* TKEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 939C27E81A21CA4C00203F65 /* TKEmpty.m */; };
 		93F3DF521A11ED8A006C9298 /* TKControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F3DF511A11ED8A006C9298 /* TKControl.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,9 @@
 		936436111A15A90F00EECC84 /* MyPlaygroundD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundD.playground; sourceTree = "<group>"; };
 		936436121A15AD5B00EECC84 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		936969091A125BB900E0DD0A /* MyPlaygroundC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundC.playground; sourceTree = "<group>"; };
+		939C27E61A21C9CB00203F65 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		939C27E71A21CA4C00203F65 /* TKSwift-3rd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TKSwift-3rd-Bridging-Header.h"; sourceTree = "<group>"; };
+		939C27E81A21CA4C00203F65 /* TKEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKEmpty.m; sourceTree = "<group>"; };
 		93B502451A18C8C700267012 /* MyPlaygroundE.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlaygroundE.playground; sourceTree = "<group>"; };
 		93F3DF511A11ED8A006C9298 /* TKControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +91,7 @@
 		936223C81A0DC8C000CAF943 /* TKSwift-3rd */ = {
 			isa = PBXGroup;
 			children = (
+				939C27E51A21C9A300203F65 /* TKIOS */,
 				93F3DF501A11ED67006C9298 /* TKControl */,
 				936223EC1A0DCEFB00CAF943 /* PlaygroundFiles */,
 				936223CB1A0DC8C000CAF943 /* AppDelegate.swift */,
@@ -136,6 +141,16 @@
 				934B500B1A1B25270010F0EA /* MyPlaygroundF.playground */,
 			);
 			path = PlaygroundFiles;
+			sourceTree = "<group>";
+		};
+		939C27E51A21C9A300203F65 /* TKIOS */ = {
+			isa = PBXGroup;
+			children = (
+				939C27E61A21C9CB00203F65 /* Header.h */,
+				939C27E81A21CA4C00203F65 /* TKEmpty.m */,
+				939C27E71A21CA4C00203F65 /* TKSwift-3rd-Bridging-Header.h */,
+			);
+			name = TKIOS;
 			sourceTree = "<group>";
 		};
 		93F3DF501A11ED67006C9298 /* TKControl */ = {
@@ -248,6 +263,7 @@
 			files = (
 				93F3DF521A11ED8A006C9298 /* TKControl.swift in Sources */,
 				936223CE1A0DC8C000CAF943 /* ViewController.swift in Sources */,
+				939C27E91A21CA4C00203F65 /* TKEmpty.m in Sources */,
 				936436131A15AD5B00EECC84 /* main.swift in Sources */,
 				936223CC1A0DC8C000CAF943 /* AppDelegate.swift in Sources */,
 			);
@@ -372,10 +388,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "TKSwift-3rd/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TKSwift-3rd/TKSwift-3rd-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -383,10 +402,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "TKSwift-3rd/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TKSwift-3rd/TKSwift-3rd-Bridging-Header.h";
 			};
 			name = Release;
 		};
