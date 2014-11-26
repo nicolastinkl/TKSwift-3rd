@@ -9,6 +9,19 @@
 import UIKit
 
 
+
+
+class MyClass: NSObject {
+    dynamic var date = NSDate()
+}
+
+
+class MyClass2: NSObject {
+    var date = NSDate()
+}
+
+
+
 /*!
 *  @author tinkl, 14-11-22 16:11:35
 *
@@ -27,6 +40,10 @@ class ViewController: UIViewController {
 
         var button  = TKControl()
         
+             
+            
+
+            
         button.log()
         
         button.setTarget(self, action: ViewController.onButtonTap, controlEvent: ControlsEvents.TouchUpInside)

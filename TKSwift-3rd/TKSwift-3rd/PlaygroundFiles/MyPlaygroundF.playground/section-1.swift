@@ -2,31 +2,35 @@
 
 import Cocoa
 
-var str:String = "ok"
+import Foundation
+
+var number = 12
+
+number.hashValue
 
 
-var nameArray = ["1 ","2","3"]
 
-
-
-
-
-func 犯法()
-{
-    println("OK")
+enum result{
+    case Success(String)
+    case Fail(NSError)
 }
 
-犯法()
+
+func dosomethings(params:AnyObject) -> result
+{
+    var succ = true
+    
+    
+    if succ
+    {
+        return result.Success("OK")
+    }
+    else
+    {
+        let error = NSError(domain:"fail",code:1,userInfo:nil)
+        return result.Fail(error)
+    }
+}
 
 
-println("\(犯法())")
-
-
-var i  =  0...4
-//0 1 2 3 4
-
-enumerate(i)
-
-
-
-
+let resultss:result =  dosomethings("OK")

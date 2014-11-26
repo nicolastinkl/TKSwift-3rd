@@ -124,6 +124,42 @@ void ads()
 }
 
 
+- (void)setTapActionWithBlock:(void (^)(void))block
+{
+        UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &kDTActionHandlerTapGestureKey);
+     
+        if (!gesture)
+            {
+                    gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(__handleActionForTapGesture:)];
+                    [self addGestureRecognizer:gesture];
+                    objc_setAssociatedObject(self, &kDTActionHandlerTapGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
+                }
+     
+        objc_setAssociatedObject(self, &kDTActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
+}
+
+
+- (void)setDataWithDic:(NSDictionary *)dic
+{
+    [dic enumerateKeysAndObjectsUsingBlock:^(NSString *key, id obj, BOOL *stop) {
+        
+        NSString *propertyKey = [self propertyForKey:key];
+        
+        if (propertyKey)
+        {
+            objc_property_t property = class_getProperty([self class], [propertyKey UTF8String]);
+            
+            // TODO: 针对特殊数据类型做处理
+            NSString *attributeString = [NSString stringWithCString:property_getAttributes(property) encoding:NSUTF8StringEncoding];
+            
+            ...
+            
+            [self setValue:obj forKey:propertyKey];
+        }
+    }];
+}
+
+
 
 
 
